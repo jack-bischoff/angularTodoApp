@@ -24,12 +24,16 @@
 		</ul>
 		<br>
 		<br>
-		<form class="form-inline" ng-submit="main.createTodo()">
-			<div class="form-group ">
-				<input class="form-control" type="text" placeholder="New Todo..." ng-model="main.newTodo">
-				<input class="btn btn-sm btn-info glyphicon glyphicon-plus" type="submit" value="Add">
+		<div class="form-inline">
+			<p><b>New Todo: </b></p>
+			<input class="form-control" type="text" ng-model="main.newTodo" placeholder="Text">
+			<div class="btn-group" role="group">
+				<button class="btn btn-md btn-primary" ng-click="main.createTodo()">Add</button>
+				<button class="btn btn-md btn-danger" ng-click="main.clearAll()">Clear All</button>	
 			</div>
-		</form>
+		</div>
+		
+		
 	</div>
 	
 </body>

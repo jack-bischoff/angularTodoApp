@@ -25,5 +25,9 @@ angular.module('app', []).controller('mainController', function(){
 		vm.todos.push(new Todo(vm.newTodo));
 		vm.newTodo = ''
 	}
+
+	vm.clearAll = function(){
+		vm.todos = [];
+	}
 })
 
